@@ -103,8 +103,8 @@ akib-ali-portfolio/
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/aliakib/portfolio.git
-   cd portfolio
+   git clone https://github.com/aliakib/akib-ali-portfolio.git
+   cd akib-ali-portfolio
    ```
 
 2. Install dependencies:
