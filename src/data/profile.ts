@@ -26,7 +26,7 @@ export const profileData: ProfileData = {
   role: "Full Stack Engineer",
   eyebrow: "SOFTWARE ENGINEER",
   headline: "I build products, backend systems and AI-powered applications.",
-  subheadline: "Full Stack Engineer with 2.5 years of product engineering experience building scalable web applications across B2B SaaS, enterprise learning platforms, and multi-channel e-commerce systems.",
+  subheadline: "Full-Stack Software Engineer with 2.5+ years of high-ownership enterprise product work at Master-O (SDE II), backed by 4+ years of hands-on full-stack development depth across systems like Daikcell, PitchLynx, and Iqra Learning Tree.",
   location: "Ghaziabad, India",
   summaryTech: [
     "React.js",
@@ -57,11 +57,11 @@ export const profileData: ProfileData = {
       issuer: "InspireOne Technologies (Master-O)",
       description: "Recognized for architecting the core CMS platform infrastructure underpinning 500+ enterprise client deployments."
     },
-    {
-      title: "CSSBattle.dev Accomplishment",
-      issuer: "CSSBattle",
-      description: "Solved 60+ advanced pixel-perfect CSS layout challenges, demonstrating precision UI engineering."
-    }
+    // {
+    //   title: "CSSBattle.dev Accomplishment",
+    //   issuer: "CSSBattle",
+    //   description: "Solved 60+ advanced pixel-perfect CSS layout challenges, demonstrating precision UI engineering."
+    // }
   ],
   education: [
     {

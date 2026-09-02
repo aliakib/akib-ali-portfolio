@@ -20,7 +20,7 @@ export const skillCategories: SkillCategory[] = [
       "TypeScript",
       "JavaScript (ES6+)",
       "TailwindCSS",
-      "Redux / Redux-Saga",
+      "Redux / Redux Toolkit",
       "Material UI",
       "HTML5 / CSS3"
     ]
@@ -82,11 +82,11 @@ export const currentlyExploring: ExploringItem[] = [
     description: "Investigating multi-agent orchestration frameworks, function calling protocols, and state management for complex LLM workflows.",
     tag: "AI Architecture"
   },
-  {
-    title: "Retrieval-Augmented Generation (RAG)",
-    description: "Exploring vector databases, chunking strategies, embeddings, and context retrieval pipelines for enterprise knowledge search.",
-    tag: "GenAI Infrastructure"
-  },
+  // {
+  //   title: "Retrieval-Augmented Generation (RAG)",
+  //   description: "Exploring vector databases, chunking strategies, embeddings, and context retrieval pipelines for enterprise knowledge search.",
+  //   tag: "GenAI Infrastructure"
+  // },
   {
     title: "Distributed Systems & Scalability",
     description: "Deepening understanding of high-availability backend design, load balancing, message queues, and horizontal database sharding.",

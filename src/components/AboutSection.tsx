@@ -8,9 +8,9 @@ import { FadeIn } from "@/components/MotionWrapper";
 export function AboutSection() {
   const progressionSteps = [
     { title: "Frontend Development", desc: "UI components, responsive layouts & CSSBattle precision engineering" },
-    { title: "Full-Stack Development", desc: "REST APIs, database schemas, authentication & RBAC architecture" },
-    { title: "Production Systems", desc: "Multi-channel integrations, Redis caching (100K+ req/day) & Docker containers" },
-    { title: "AI & Real-Time Products", desc: "Azure OpenAI GPT-4 content automation & sub-200ms Socket.IO voice platforms" },
+    { title: "Full-Stack Architecture", desc: "REST APIs, database schemas, authentication & RBAC architecture" },
+    { title: "Enterprise SaaS Engineering", desc: "B2B platform ownership (Master-O SDE II), Redis caching (100K+ req/day) & Azure OpenAI GPT-4" },
+    { title: "Production Systems & AI", desc: "Multi-channel logistics business platforms (Daikcell) & real-time Socket.IO voice platforms (PitchLynx)" },
   ];
 
   return (
@@ -30,10 +30,10 @@ export function AboutSection() {
           <FadeIn direction="up" className="lg:col-span-7 space-y-6 text-slate-600 leading-relaxed text-base">
             <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-4">
               <p className="text-slate-900 font-medium text-lg leading-snug">
-                "Full Stack Engineer with 2.5 years of product engineering experience building and owning scalable web applications across B2B SaaS, enterprise learning platforms, and multi-channel e-commerce systems."
+                "Full-Stack Software Engineer with 2.5+ years of high-ownership enterprise product work at Master-O (SDE II), backed by 4+ years of hands-on full-stack development depth across projects like Daikcell, PitchLynx, and Iqra Learning Tree."
               </p>
               <p>
-                Delivered end-to-end ownership — from system design and backend API architecture to responsive React frontends and production deployments — for systems serving 10,000+ daily active users across 500+ enterprise clients.
+                Delivered end-to-end ownership — from system design and backend API architecture to responsive React frontends and production deployments — for enterprise systems serving 10,000+ daily active users across 500+ enterprise clients.
               </p>
             </div>
 
@@ -44,14 +44,14 @@ export function AboutSection() {
             <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="p-4 rounded-xl border border-slate-200/80 bg-white">
                 <ShieldCheck className="w-5 h-5 text-indigo-600 mb-2" />
-                <h4 className="font-bold text-slate-900 text-sm mb-1">High Ownership Engineering</h4>
-                <p className="text-xs text-slate-500">Sole engineer owning enterprise CMS dashboards from design through production for 500+ enterprise clients.</p>
+                <h4 className="font-bold text-slate-900 text-sm mb-1">Enterprise Experience</h4>
+                <p className="text-xs text-slate-500">2.5+ years of high-ownership enterprise product work at Master-O (SDE II) serving 500+ enterprise clients.</p>
               </div>
 
               <div className="p-4 rounded-xl border border-slate-200/80 bg-white">
                 <User className="w-5 h-5 text-indigo-600 mb-2" />
-                <h4 className="font-bold text-slate-900 text-sm mb-1">Pragmatic & Defensible</h4>
-                <p className="text-xs text-slate-500">Every project, metric, and skill represents real production work that I can discuss in technical detail.</p>
+                <h4 className="font-bold text-slate-900 text-sm mb-1">4+ YOE Hands-On Depth</h4>
+                <p className="text-xs text-slate-500">4+ years building production multi-channel business platforms (Daikcell), AI voice systems (PitchLynx), and full-stack applications (Iqra).</p>
               </div>
             </div>
           </FadeIn>
