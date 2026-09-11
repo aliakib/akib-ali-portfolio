@@ -26,7 +26,7 @@ export function ServicesSection() {
             What I Build
           </h2>
           <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-            Software engineering services for products, platforms, API integrations, and AI applications.
+            Software engineering services for products, platforms, API integrations and AI applications.
           </p>
         </div>
 

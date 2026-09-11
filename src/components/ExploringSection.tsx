@@ -19,7 +19,7 @@ export function ExploringSection() {
             Currently Exploring
           </h2>
           <p className="text-sm text-slate-600 leading-relaxed font-normal">
-            Exploring advanced AI application architectures, retrieval-augmented systems, autonomous agent workflows, distributed systems, and scalable real-time applications.
+            Exploring advanced AI application architectures, retrieval-augmented systems, autonomous agent workflows, distributed systems and scalable real-time applications.
           </p>
         </div>
 

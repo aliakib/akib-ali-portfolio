@@ -23,13 +23,13 @@ export function AboutSection() {
           <FadeIn direction="up" className="lg:col-span-7 space-y-6 text-slate-600 leading-relaxed text-base">
             <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-4">
               <p className="text-slate-900 font-semibold text-lg leading-snug">
-                I'm a Full-Stack Software Engineer focused on building web applications, backend systems, business tools, and AI-powered products.
+                I'm a Full-Stack Software Engineer focused on building web applications, backend systems, business tools and AI-powered products.
               </p>
               <p>
-                My work covers frontend and backend development, API design, database workflows, real-time WebSockets, third-party integrations, cloud deployment, and AI application engineering.
+                My work covers frontend and backend development, API design, database workflows, real-time WebSockets, third-party integrations, cloud deployment and AI application engineering.
               </p>
               <p>
-                I prefer solving practical engineering problems where software has to support real users, real workflows, and real operational constraints.
+                I prefer solving practical engineering problems where software has to support real users, real workflows and real operational constraints.
               </p>
             </div>
 
@@ -37,13 +37,13 @@ export function AboutSection() {
               <div className="p-4 rounded-xl border border-slate-200/80 bg-white shadow-2xs">
                 <ShieldCheck className="w-5 h-5 text-indigo-600 mb-2" />
                 <h4 className="font-bold text-slate-900 text-sm mb-1">Production Execution</h4>
-                <p className="text-xs text-slate-500">Built backend services, REST APIs, Redis caching layers, and database schemas for enterprise applications.</p>
+                <p className="text-xs text-slate-500">Built backend services, REST APIs, Redis caching layers and database schemas for enterprise applications.</p>
               </div>
 
               <div className="p-4 rounded-xl border border-slate-200/80 bg-white shadow-2xs">
                 <User className="w-5 h-5 text-indigo-600 mb-2" />
                 <h4 className="font-bold text-slate-900 text-sm mb-1">Business Workflow Focus</h4>
-                <p className="text-xs text-slate-500">Engineered inventory tools, e-commerce marketplace integrations, real-time AI platforms, and admin dashboards.</p>
+                <p className="text-xs text-slate-500">Engineered inventory tools, e-commerce marketplace integrations, real-time AI platforms and admin dashboards.</p>
               </div>
             </div>
           </FadeIn>

@@ -18,7 +18,7 @@ export function ExperienceSection() {
             Professional Engineering Work
           </h2>
           <p className="text-lg text-slate-600 font-normal leading-relaxed">
-            Professional roles focused on shipping production features, building APIs, developing interactive products, and integrating complex business systems.
+            Professional roles focused on shipping production features, building APIs, developing interactive products and integrating complex business systems.
           </p>
         </div>
 

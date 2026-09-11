@@ -13,7 +13,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Ali Akib — Full-Stack Software Engineer | Node.js, AI & Product Engineering",
   description:
-    "Portfolio of Ali Akib, a Full-Stack Software Engineer specializing in Node.js, business applications, API integrations, real-time systems, and AI-powered products.",
+    "Portfolio of Ali Akib, a Full-Stack Software Engineer specializing in Node.js, business applications, API integrations, real-time systems and AI-powered products.",
   keywords: [
     "Ali Akib",
     "Akib Ali",
@@ -40,14 +40,14 @@ export const metadata: Metadata = {
     url: "https://akibali.dev",
     title: "Ali Akib — Full-Stack Software Engineer | Node.js, AI & Product Engineering",
     description:
-      "Portfolio of Ali Akib, a Full-Stack Software Engineer specializing in Node.js, business applications, API integrations, real-time systems, and AI-powered products.",
+      "Portfolio of Ali Akib, a Full-Stack Software Engineer specializing in Node.js, business applications, API integrations, real-time systems and AI-powered products.",
     siteName: "Ali Akib Engineering Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Ali Akib — Full-Stack Software Engineer | Node.js, AI & Product Engineering",
     description:
-      "Portfolio of Ali Akib, a Full-Stack Software Engineer specializing in Node.js, business applications, API integrations, real-time systems, and AI-powered products.",
+      "Portfolio of Ali Akib, a Full-Stack Software Engineer specializing in Node.js, business applications, API integrations, real-time systems and AI-powered products.",
   },
 };
 
@@ -62,7 +62,7 @@ export default function RootLayout({
     name: "Akib Ali",
     jobTitle: "Full-Stack Software Engineer",
     description:
-      "Full-Stack Software Engineer specializing in Node.js, business applications, API integrations, real-time systems, and AI-powered products.",
+      "Full-Stack Software Engineer specializing in Node.js, business applications, API integrations, real-time systems and AI-powered products.",
     knowsAbout: [
       "Node.js",
       "TypeScript",

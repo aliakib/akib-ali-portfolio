@@ -22,7 +22,7 @@ export function FeaturedProjects() {
             Featured Projects
           </h2>
           <p className="text-lg text-slate-600 font-normal leading-relaxed">
-            Real multi-channel business platforms, AI-powered applications, and enterprise SaaS integrations built to solve operational problems.
+            Real multi-channel business platforms, AI-powered applications and enterprise SaaS integrations built to solve operational problems.
           </p>
         </div>
 
