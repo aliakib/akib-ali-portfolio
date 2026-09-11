@@ -31,9 +31,9 @@ export const profileData: ProfileData = {
   role: "Full-Stack Software Engineer",
   eyebrow: "FULL-STACK SOFTWARE ENGINEER",
   headline: "Building production-ready products, backend systems & AI-powered applications.",
-  subheadline: "Full-Stack Software Engineer with 2.5+ years of product engineering experience building production web applications, business systems, API integrations, real-time applications, and AI-powered products.",
-  credibilityLine: "From enterprise SaaS and multi-channel commerce systems to real-time AI applications, I build software around real product and operational requirements.",
-  aboutBio: "I'm a Full-Stack Software Engineer focused on building production web applications, backend systems, business platforms, and AI-powered products.\n\nMy experience spans frontend and backend development, API design, database-driven applications, real-time communication, third-party integrations, cloud deployment, and AI application development.\n\nI prefer solving practical engineering problems where software has to support real users, real workflows, and real operational constraints.",
+  subheadline: "Full-Stack Software Engineer with 2.5+ years of professional industry experience and 4+ years of hands-on software development experience. Most of my work involves Node.js, TypeScript, APIs, database design, real-time applications and AI features.",
+  credibilityLine: "I've spent the last few years building software across enterprise SaaS, multi-channel commerce tools and real-time voice applications — focusing on real product and operational requirements.",
+  aboutBio: "I'm a Full-Stack Software Engineer focused on building web applications, backend systems, business tools and AI-powered products.\n\nMy work covers frontend and backend development, API design, database workflows, real-time WebSockets, third-party integrations, cloud deployment and AI application engineering.\n\nI prefer solving practical engineering problems where software has to support real users, real workflows and real operational constraints.",
   location: "Ghaziabad, India",
   summaryTech: [
     "Node.js",
@@ -48,10 +48,10 @@ export const profileData: ProfileData = {
     "OpenAI"
   ],
   metrics: [
-    { value: "2.5+ Years", label: "Product Engineering", subtext: "Full-stack & backend software development" },
+    { value: "2.5+ Years", label: "Professional Industry Experience", subtext: "Software development in organizations (Master-O SDE II)" },
+    { value: "4+ Years", label: "Hands-On Software Development", subtext: "Total experience building web systems & client projects" },
     { value: "500+", label: "Enterprise Clients", subtext: "Platform scale served by Master-O SaaS" },
-    { value: "10K+", label: "Daily Active Users", subtext: "Platform scale across enterprise deployments" },
-    { value: "100K+", label: "API Requests / Day", subtext: "Platform scale backend API throughput" }
+    { value: "100K+", label: "API Requests / Day", subtext: "Backend platform scale optimized via Redis caching" }
   ],
   socials: {
     github: "https://github.com/aliakib",
@@ -70,12 +70,12 @@ export const profileData: ProfileData = {
     {
       title: "Engineering Masterpiece Award",
       issuer: "InspireOne Technologies (Master-O)",
-      description: "Recognized for architecting the core CMS platform infrastructure underpinning 500+ enterprise client deployments."
+      description: "Recognized internally for architecting the CMS platform infrastructure underpinning 500+ enterprise client deployments."
     },
     {
-      title: "CSSBattle.dev Accomplishment",
+      title: "CSSBattle.dev Solutions",
       issuer: "CSSBattle",
-      description: "Solved 60+ advanced pixel-perfect CSS layout challenges, demonstrating precision UI engineering."
+      description: "Solved 60+ pixel-perfect CSS layout challenges, demonstrating precision frontend layout skills."
     }
   ],
   education: [

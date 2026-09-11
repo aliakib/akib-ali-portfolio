@@ -15,7 +15,7 @@ export const tieredSkillGroups: TieredSkillGroup[] = [
   {
     tierName: "Core Production Stack",
     badgeLabel: "Production Verified",
-    description: "Technologies used repeatedly across real production platforms and enterprise deployments.",
+    description: "Used Redis for caching high-frequency API responses, Socket.IO for real-time WebSockets, Express and Node.js for backend APIs, MySQL and MongoDB for databases and React/Next.js for user interfaces.",
     skills: [
       "Node.js",
       "TypeScript",
@@ -35,7 +35,7 @@ export const tieredSkillGroups: TieredSkillGroup[] = [
   {
     tierName: "Additional Ecosystem Experience",
     badgeLabel: "Project Implemented",
-    description: "Specialized integrations, enterprise LLM pipelines, and external commerce/logistics APIs.",
+    description: "Used Azure OpenAI for content automation, Amazon SP-API for seller marketplace data, Shiprocket for logistics tracking and GitHub Actions for automated deployment.",
     skills: [
       "Amazon SP-API",
       "Shiprocket API",
@@ -54,17 +54,17 @@ export const tieredSkillGroups: TieredSkillGroup[] = [
 export const currentlyExploring: ExploringItem[] = [
   {
     title: "AI Agent Architectures",
-    description: "Exploring multi-agent orchestration frameworks, function calling protocols, and state management for autonomous workflows.",
+    description: "Exploring multi-agent orchestration frameworks, function calling protocols and state management for autonomous workflows.",
     tag: "AI Architecture"
   },
   {
     title: "RAG Systems",
-    description: "Exploring vector databases, document chunking strategies, embeddings, and context retrieval pipelines for enterprise knowledge search.",
+    description: "Exploring vector databases, document chunking strategies, embeddings and context retrieval pipelines for knowledge search.",
     tag: "GenAI Infrastructure"
   },
   {
     title: "Distributed Systems",
-    description: "Exploring load balancing, message queues, database sharding, caching topologies, and high-availability backend design.",
+    description: "Exploring load balancing, message queues, database sharding, caching topologies and high-availability backend design.",
     tag: "Backend Systems"
   },
   {
