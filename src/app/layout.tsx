@@ -11,23 +11,26 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Akib Ali — Full-Stack Software Engineer",
+  title: "Ali Akib — Full-Stack Software Engineer | Node.js, AI & Product Engineering",
   description:
-    "Full-stack software engineer focused on building web applications, backend systems, integrations and AI-powered products.",
+    "Portfolio of Ali Akib, a Full-Stack Software Engineer specializing in Node.js, business applications, API integrations, real-time systems, and AI-powered products.",
   keywords: [
+    "Ali Akib",
     "Akib Ali",
-    "Full-Stack Engineer",
-    "Software Engineer",
+    "Full-Stack Software Engineer",
+    "Node.js",
+    "TypeScript",
     "React",
     "Next.js",
-    "TypeScript",
-    "Node.js",
-    "Backend Systems",
+    "Express",
+    "Socket.IO",
     "Daikcell",
     "Master-O",
+    "PitchLynx",
     "REST APIs",
     "Redis",
-    "Docker"
+    "Docker",
+    "AI Applications"
   ],
   authors: [{ name: "Akib Ali" }],
   creator: "Akib Ali",
@@ -35,16 +38,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://akibali.dev",
-    title: "Akib Ali — Full-Stack Software Engineer",
+    title: "Ali Akib — Full-Stack Software Engineer | Node.js, AI & Product Engineering",
     description:
-      "Full-stack software engineer focused on building web applications, backend systems, integrations and AI-powered products.",
-    siteName: "Akib Ali Engineering Portfolio",
+      "Portfolio of Ali Akib, a Full-Stack Software Engineer specializing in Node.js, business applications, API integrations, real-time systems, and AI-powered products.",
+    siteName: "Ali Akib Engineering Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Akib Ali — Full-Stack Software Engineer",
+    title: "Ali Akib — Full-Stack Software Engineer | Node.js, AI & Product Engineering",
     description:
-      "Full-stack software engineer focused on building web applications, backend systems, integrations and AI-powered products.",
+      "Portfolio of Ali Akib, a Full-Stack Software Engineer specializing in Node.js, business applications, API integrations, real-time systems, and AI-powered products.",
   },
 };
 
@@ -59,19 +62,21 @@ export default function RootLayout({
     name: "Akib Ali",
     jobTitle: "Full-Stack Software Engineer",
     description:
-      "Full-stack software engineer focused on building web applications, backend systems, integrations and AI-powered products.",
+      "Full-Stack Software Engineer specializing in Node.js, business applications, API integrations, real-time systems, and AI-powered products.",
     knowsAbout: [
+      "Node.js",
+      "TypeScript",
+      "Express",
       "React",
       "Next.js",
-      "TypeScript",
-      "Node.js",
-      "Express",
+      "Socket.IO",
       "MongoDB",
       "MySQL",
       "Prisma",
       "Redis",
       "Docker",
-      "AI Applications"
+      "Amazon SP-API",
+      "OpenAI"
     ],
   };
 

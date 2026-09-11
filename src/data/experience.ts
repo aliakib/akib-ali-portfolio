@@ -16,28 +16,29 @@ export const experienceData: ExperienceItem[] = [
     location: "Gurgaon, India",
     period: "Aug 2023 – Dec 2025",
     statusBadge: "Engineering Masterpiece Award Winner",
-    summary: "B2B SaaS Enterprise Learning Platform powering 500+ enterprise clients & 10,000+ daily active users. Owned full-stack delivery of the React.js CMS dashboard from system design to production deployment.",
+    summary: "Worked on Master-O, a B2B SaaS enterprise learning platform serving 500+ enterprise clients and 10,000+ daily active users.",
     highlights: [
-      "Architected and owned full-stack delivery of a React.js CMS dashboard powering the Master-O microlearning platform for 500+ enterprise clients; recognized with the Engineering Masterpiece Award",
-      "Developed an Azure OpenAI (GPT-4)-powered content automation pipeline using Node.js — automated manual content workflows, accelerating enterprise publishing cycles",
-      "Implemented a Redis caching layer across high-frequency REST API endpoints handling 100,000+ daily requests — reduced database query load on critical read paths",
-      "Delivered a real-time analytics and MIS reporting dashboard with scheduled email distribution for 500+ enterprise stakeholders, eliminating manual reporting turnaround",
-      "Designed and implemented a JWT-based authentication and RBAC system integrated with client HRMS infrastructure — streamlined onboarding for 10,000+ users with zero unauthorized access incidents",
-      "Delivered a multilingual content delivery system with dynamic locale switching for international enterprise market expansion",
-      "Developed gamified interactive learning modules in React.js for 10,000+ DAUs; established a reusable component library accelerating frontend delivery velocity across the team"
+      "Owned full-stack delivery of the React.js CMS dashboard from system design through production deployment.",
+      "Built an Azure OpenAI-powered content automation pipeline using Node.js.",
+      "Implemented Redis caching across high-frequency REST endpoints handling 100K+ daily requests.",
+      "Designed JWT/RBAC authentication integrated with client HRMS infrastructure.",
+      "Built real-time analytics and MIS reporting with scheduled email distribution.",
+      "Developed multilingual content delivery capabilities.",
+      "Built gamified React learning modules used by the platform's user base.",
+      "Received the Engineering Masterpiece Award."
     ],
     technologies: [
-      "React.js",
+      "React",
       "TypeScript",
-      "JavaScript (ES6+)",
+      "JavaScript",
       "Node.js",
-      "Express.js",
+      "Express",
       "Redis",
-      "Azure OpenAI (GPT-4)",
-      "JWT / RBAC",
+      "Azure OpenAI",
+      "JWT",
+      "RBAC",
       "Redux",
-      "Material UI",
-      "TailwindCSS"
+      "Tailwind CSS"
     ]
   },
   {
@@ -45,52 +46,52 @@ export const experienceData: ExperienceItem[] = [
     role: "Full-Stack Software Engineer",
     location: "Production Platform",
     period: "Jan 2026 – Present",
-    statusBadge: "Multi-Channel Sales Platform",
-    summary: "Designed and launched an end-to-end enterprise multi-channel sales and inventory management platform covering listings, warehouse operations, inventory tracking, purchase workflows, and sales order lifecycles.",
+    statusBadge: "Multi-Channel Commerce Platform",
+    summary: "Designed and implemented backend services, business workflows, database models, API integrations, and production application features for a multi-channel commerce platform.",
     highlights: [
-      "Designed and launched an end-to-end enterprise sales management system replacing fragmented manual processes with a single unified platform",
-      "Integrated Amazon SP-API, Saleor, and Shiprocket API to automate real-time order synchronization, inventory updates, and shipment tracking across sales channels",
-      "Delivered returns, replacements, and refund modules with filter-based graphical and tabular analytics dashboards",
-      "Architected backend services using Node.js, TypeScript, Express, MySQL, and Prisma ORM, containerized with Docker"
+      "Designed and implemented backend services, inventory workflows, order lifecycles, and returns modules for a multi-channel commerce platform.",
+      "Integrated Amazon SP-API, Saleor, and Shiprocket APIs to automate order synchronization, inventory tracking, and shipment updates.",
+      "Delivered filter-based graphical and tabular analytics dashboards providing operational visibility into business metrics.",
+      "Architected backend microservices with Node.js, Express, TypeScript, MySQL, and Prisma ORM, containerized with Docker."
     ],
     technologies: [
-      "React.js",
+      "React",
       "Node.js",
       "TypeScript",
-      "Express.js",
+      "Express",
       "MySQL",
-      "Prisma ORM",
+      "Prisma",
       "Amazon SP-API",
       "Saleor",
-      "Shiprocket API",
+      "Shiprocket",
       "Docker"
     ]
   },
   {
     company: "PitchLynx",
-    role: "Creator & Lead AI Engineer",
+    role: "Creator & Lead Engineer",
     location: "Real-Time AI Platform",
     period: "Jan 2026 – Present",
     statusBadge: "Real-Time AI & WebSockets",
-    summary: "Architected a low-latency real-time voice platform for AI-driven interview and sales pitch coaching with sub-200ms round-trip latency.",
+    summary: "Architected and developed the platform's real-time communication layer, AI integration, session management, backend APIs, data layer, and deployment infrastructure.",
     highlights: [
-      "Architected a low-latency real-time voice platform using a bidirectional WebSocket layer via Socket.IO achieving sub-200ms round-trip latency",
-      "Integrated OpenAI API for real-time conversation analysis and context-aware personalized feedback generation",
-      "Designed MySQL schema via Prisma ORM for session tracking, analytics, and user progress history",
-      "Deployed on AWS with Docker and GitHub Actions CI/CD pipelines — JWT-secured endpoints, environment-isolated containers, and automated deployments"
+      "Architected a low-latency real-time voice platform using a bidirectional WebSocket layer via Socket.IO achieving sub-200ms round-trip latency.",
+      "Integrated OpenAI API for real-time conversation analysis and context-aware personalized feedback generation.",
+      "Designed MySQL relational schemas via Prisma ORM for session tracking, user progress history, and analytics.",
+      "Deployed containerized services on AWS with automated GitHub Actions CI/CD pipelines and JWT security."
     ],
     technologies: [
       "Next.js",
       "Node.js",
       "TypeScript",
+      "Express",
       "Socket.IO",
-      "TailwindCSS",
+      "Tailwind CSS",
       "MySQL",
-      "Prisma ORM",
+      "Prisma",
       "OpenAI API",
       "AWS",
-      "Docker",
-      "CI/CD"
+      "Docker"
     ]
   }
 ];

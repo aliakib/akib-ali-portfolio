@@ -1,20 +1,22 @@
 export interface CaseStudyData {
   id: string;
   title: string;
+  categoryTag: string;
   tagline: string;
   isPrimaryFeatured?: boolean;
   status: string;
   role: string;
   period?: string;
   overview: string;
-  context: string;
-  whatIBuilt: string[];
-  architectureDescription: string;
+  problem: string;
+  solution: string;
+  myContribution: string;
+  engineering: string;
+  impact?: string;
+  keyEngineeringWork: string[];
   keyChallenges: string[];
   engineeringDecisions: string[];
   technologies: string[];
-  whatILearned: string[];
-  outcome: string;
   githubUrl?: string;
   demoUrl?: string;
   highlights: string[];
@@ -24,193 +26,201 @@ export const projectsData: CaseStudyData[] = [
   {
     id: "daikcell",
     title: "Daikcell",
-    tagline: "Multi-Channel Sales & Inventory Management Platform",
+    categoryTag: "Multi-Channel Commerce & Inventory Platform",
+    tagline: "An enterprise sales and inventory management platform designed to unify product listings, warehouse operations, inventory tracking, purchasing, returns, refunds, and sales-order workflows across multiple sales channels.",
     isPrimaryFeatured: true,
-    status: "Delivered Production Platform",
+    status: "Delivered Production System",
     role: "Full-Stack Software Engineer",
     period: "Jan 2026 – Present",
-    overview: "Daikcell is an end-to-end enterprise sales and inventory management system designed to unify product listings, warehouse operations, inventory tracking, purchase workflows, and sales order lifecycles across multiple sales channels.",
-    context: "Operating a multi-channel e-commerce business requires real-time synchronization between sales marketplaces, logistics providers, and internal inventory databases. Daikcell replaces fragmented manual processes with a centralized, automated platform.",
-    whatIBuilt: [
-      "End-to-end enterprise sales management system covering listings, warehouse operations, inventory, and order lifecycles",
-      "Real-time order synchronization and inventory tracking integrated with Amazon SP-API, Saleor, and Shiprocket API",
-      "Returns, replacements, and refund modules with filter-based analytics dashboards (graphical + tabular)",
-      "Multi-warehouse inventory allocation algorithms and purchase workflow processing",
-      "Relational data model using MySQL and Prisma ORM for transaction consistency"
+    overview: "An enterprise sales and inventory management platform designed to unify product listings, warehouse operations, inventory tracking, purchasing, returns, refunds, and sales-order workflows across multiple sales channels.",
+    problem: "Operating across multiple sales channels required manual stock adjustments and separate platform workflows. This led to order fulfillment lags, inventory inconsistencies across marketplaces, and fragmented warehouse reporting.",
+    solution: "Designed and implemented a centralized multi-channel business platform integrating external commerce APIs and logistics webhooks into unified inventory and order lifecycles.",
+    myContribution: "Designed and implemented backend services, business workflows, database models, API integrations, and production application features across the platform.",
+    engineering: "Built with Node.js, Express, and TypeScript on the backend with a React frontend. MySQL managed via Prisma ORM ensures relational data integrity for purchase and order transactions. Integrates Amazon SP-API, Saleor (headless commerce), and Shiprocket (logistics) via event-driven webhook handlers and REST endpoints.",
+    impact: "Centralized multi-channel commerce operations into a single system, automating cross-platform order synchronization and providing visibility via graphical and tabular analytics.",
+    keyEngineeringWork: [
+      "Amazon SP-API integration for seller account & order data",
+      "Saleor headless commerce store integration",
+      "Shiprocket API integration for shipping status & webhook tracking",
+      "Multi-warehouse inventory allocation & tracking workflows",
+      "Sales-order lifecycle management and order processing",
+      "Purchase order creation and supplier workflows",
+      "Returns, replacements, and refund modules",
+      "Filter-based analytics dashboards (graphical + tabular)",
+      "Node.js / TypeScript RESTful backend architecture",
+      "MySQL database design & Prisma ORM modeling",
+      "Docker containerized local & production environments"
     ],
-    architectureDescription: "Built with Node.js, Express, and TypeScript on the backend with a React.js frontend. MySQL managed via Prisma ORM ensures transactional data integrity for order handling. The platform integrates with Amazon SP-API, Saleor (headless commerce), and Shiprocket (logistics) via resilient REST and webhook integration pipelines, fully containerized using Docker.",
     keyChallenges: [
-      "Synchronizing multi-channel inventory and order states across asynchronous external APIs (Amazon SP-API, Shiprocket, Saleor)",
-      "Eliminating fulfillment lag and manual cross-platform data entry through automated Webhook architectures",
-      "Building flexible graphical and tabular analytics dashboards for operational visibility without external BI tools",
-      "Handling concurrent stock allocation updates across multi-warehouse logistics locations"
+      "Synchronizing inventory and order states across asynchronous external APIs (Amazon SP-API, Shiprocket, Saleor)",
+      "Maintaining database transactional consistency during concurrent multi-warehouse inventory updates",
+      "Handling asynchronous third-party webhook payloads and rate-limited API endpoints"
     ],
     engineeringDecisions: [
-      "Used Prisma ORM over raw queries to enforce strict TypeScript type safety across relational database operations",
+      "Leveraged Prisma ORM over raw SQL queries to enforce strict TypeScript type safety across database operations",
       "Architected event-driven Webhook handlers to process real-time shipment status updates from Shiprocket",
-      "Containerized backend micro-services and database instances using Docker for environment consistency",
-      "Implemented modular integration adapters separating external API contracts from core business logic"
+      "Containerized microservices and database instances using Docker for consistent development and deployment"
     ],
     technologies: [
-      "React.js",
+      "React",
       "Node.js",
       "TypeScript",
-      "Express.js",
+      "Express",
       "MySQL",
       "Prisma",
       "Amazon SP-API",
       "Saleor",
-      "Shiprocket API",
+      "Shiprocket",
       "Docker"
     ],
-    whatILearned: [
-      "Designing multi-channel e-commerce synchronization pipelines",
-      "Handling third-party enterprise integrations (Amazon SP-API, Shiprocket, Saleor) in production",
-      "Building operational analytics dashboards directly into full-stack applications",
-      "Managing complex relational data constraints for e-commerce order fulfillment"
-    ],
-    outcome: "Successfully launched an end-to-end enterprise platform that eliminated manual cross-platform data entry, reduced fulfillment lag, and provided operations teams with real-time business metrics.",
     highlights: [
       "Integrated Amazon SP-API, Saleor, and Shiprocket APIs",
-      "End-to-end sales order lifecycle & multi-warehouse inventory tracking",
-      "Filter-based graphical & tabular analytics dashboards for returns & refunds",
-      "Containerized backend architecture with Docker, TypeScript & Prisma"
+      "Centralized multi-warehouse inventory tracking & sales-order workflows",
+      "Relational backend architecture with MySQL, Prisma, and TypeScript",
+      "Graphical & tabular analytics dashboards for returns and replacements"
     ]
   },
   {
     id: "pitchlynx",
     title: "PitchLynx",
-    tagline: "Voice-Based AI Conversation Practice Platform with Sub-200ms Latency",
+    categoryTag: "AI-Powered Real-Time Conversation Platform",
+    tagline: "A voice-based platform designed for interview and sales-pitch practice through AI-driven conversation and feedback.",
     isPrimaryFeatured: false,
     status: "Active AI Platform",
     role: "Creator & Lead Engineer",
     period: "Jan 2026 – Present",
-    overview: "PitchLynx is a real-time voice platform designed for AI-driven interview and sales pitch coaching, leveraging bidirectional WebSockets and OpenAI API for live conversation analysis.",
-    context: "Voice-based AI coaching requires extremely low network latency for natural conversational interaction. PitchLynx was architected to achieve sub-200ms round-trip latency while delivering real-time feedback and session progress tracking.",
-    whatIBuilt: [
-      "Low-latency real-time voice platform utilizing bidirectional WebSockets via Socket.IO achieving sub-200ms round-trip latency",
-      "OpenAI API integration for real-time conversation analysis and context-aware feedback generation",
-      "MySQL relational schema via Prisma ORM for session tracking, analytics, and user progress history",
-      "JWT-secured authentication endpoints and AWS deployment with Docker containers and GitHub Actions CI/CD pipelines"
+    overview: "A voice-based platform designed for interview and sales-pitch practice through AI-driven conversation and feedback.",
+    problem: "Traditional communication practice lacks real-time interactive evaluation. Building voice-based AI interaction requires ultra-low latency WebSocket streaming to enable natural speech exchanges.",
+    solution: "Architected a low-latency real-time voice coaching application utilizing bidirectional Socket.IO WebSockets achieving sub-200ms round-trip latency combined with OpenAI API for live conversation analysis.",
+    myContribution: "Architected and developed the platform's real-time communication layer, AI integration, session management, backend APIs, data layer, and deployment infrastructure.",
+    engineering: "Constructed with Next.js and Tailwind CSS on the frontend, communicating with a Node.js/Express backend via Socket.IO. OpenAI API analyzes live audio session context, storing progress history in MySQL via Prisma ORM. Containerized with Docker and deployed on AWS via automated GitHub Actions CI/CD.",
+    impact: "Delivered a low-latency real-time voice practice platform capable of processing speech streams with sub-200ms round-trip latency while generating context-aware AI evaluations.",
+    keyEngineeringWork: [
+      "Socket.IO / WebSocket bidirectional real-time communication",
+      "OpenAI API integration for live transcript & feedback generation",
+      "Real-time conversation processing & session context management",
+      "Session analytics and progress history tracking",
+      "MySQL database design + Prisma ORM data layer",
+      "JWT-secured REST API endpoints",
+      "Docker containerized environments",
+      "AWS deployment infrastructure",
+      "GitHub Actions automated CI/CD pipeline"
     ],
-    architectureDescription: "Built with Next.js and TailwindCSS on the frontend and Node.js/Express with Socket.IO on the backend. WebSockets handle live audio stream payloads with sub-200ms round-trip latency. OpenAI API analyzes conversation context, persisting session history in MySQL via Prisma ORM. Deployed on AWS using Docker containers with automated GitHub Actions CI/CD.",
     keyChallenges: [
-      "Achieving sub-200ms round-trip latency across bidirectional Socket.IO WebSocket connections for seamless voice interaction",
-      "Managing real-time conversation state and context buffers for OpenAI API analysis",
-      "Configuring environment-isolated Docker containers and automated CI/CD deployment on merge to main"
+      "Maintaining sub-200ms round-trip latency over WebSocket connections during live voice streaming",
+      "Structuring context buffers to feed OpenAI API for real-time conversation evaluations",
+      "Automating environment-isolated Docker builds on merge to main via GitHub Actions"
     ],
     engineeringDecisions: [
       "Selected Socket.IO over HTTP polling to enable low-latency bidirectional voice streams",
-      "Designed a modular session state manager to buffer live transcripts before sending structured prompts to OpenAI",
-      "Automated build, test, and deploy steps via GitHub Actions pipelines to AWS EC2 instances"
+      "Implemented modular session state managers to buffer live transcripts before sending structured prompts to OpenAI",
+      "Automated CI/CD pipelines to deploy containerized services on AWS EC2 instances"
     ],
     technologies: [
       "Next.js",
       "Node.js",
       "TypeScript",
-      "Express.js",
+      "Express",
       "Socket.IO",
-      "TailwindCSS",
+      "Tailwind CSS",
       "MySQL",
       "Prisma",
       "OpenAI API",
       "AWS",
-      "Docker",
-      "CI/CD"
+      "Docker"
     ],
-    whatILearned: [
-      "Engineering low-latency WebSocket infrastructure for voice applications",
-      "Integrating OpenAI API for real-time conversational analysis and feedback",
-      "Setting up automated containerized deployment pipelines on AWS with Docker & GitHub Actions"
-    ],
-    outcome: "Delivered a functional, low-latency AI conversation coaching platform featuring sub-200ms WebSocket streams, real-time OpenAI feedback, and automated cloud deployments.",
     githubUrl: "https://github.com/aliakib",
     highlights: [
-      "Bidirectional WebSocket layer (Socket.IO) with sub-200ms round-trip latency",
-      "Real-time OpenAI API integration for personalized speech feedback",
-      "Deployed on AWS with Docker & automated GitHub Actions CI/CD",
-      "Session analytics & progress tracking in MySQL via Prisma ORM"
+      "Socket.IO / WebSocket communication with sub-200ms round-trip latency",
+      "Real-time OpenAI API integration for personalized speech & interview feedback",
+      "MySQL relational schema via Prisma ORM for session progress analytics",
+      "Containerized deployment on AWS with GitHub Actions CI/CD"
     ]
   },
   {
     id: "master-o",
-    title: "Master-O (InspireOne Technologies)",
-    tagline: "B2B SaaS Enterprise Learning Platform powering 500+ enterprise clients & 10,000+ daily active users",
+    title: "Master-O",
+    categoryTag: "Enterprise SaaS Platform",
+    tagline: "Enterprise SaaS platform used by organizations to manage and optimize field operations, microlearning workflows, and business processes.",
     isPrimaryFeatured: false,
-    status: "Professional Work — Award Winner",
+    status: "Professional Experience — Award Winner",
     role: "Software Development Engineer II",
     period: "Aug 2023 – Dec 2025",
-    overview: "Engineering contributions as SDE II across the Master-O B2B SaaS enterprise microlearning platform, owning the React.js CMS dashboard, Azure OpenAI (GPT-4) pipelines, Redis caching, and RBAC authentication.",
-    context: "Master-O serves over 500+ enterprise clients and 10,000+ daily active users. As SDE II, I had full-stack ownership from system design to production deployment, earning the Engineering Masterpiece Award for core platform contributions.",
-    whatIBuilt: [
-      "Architected & owned full-stack delivery of a React.js CMS dashboard powering microlearning content for 500+ enterprise clients",
-      "Azure OpenAI (GPT-4) content automation pipeline using Node.js — automated content processing, accelerating publishing cycles",
-      "Redis caching layer across high-frequency REST API endpoints handling 100,000+ daily requests, reducing database query load",
-      "JWT-based authentication and RBAC system integrated with client HRMS infrastructure, onboarding 10,000+ users securely",
-      "Real-time analytics and MIS reporting dashboard with scheduled email distribution for 500+ enterprise stakeholders",
-      "Multilingual content delivery system with dynamic locale switching for international market expansion",
-      "Gamified interactive learning modules (Point to Shoot, Rotate to Match, Crazy Cars, Pac-Man style) in React.js for 10,000+ DAUs"
+    overview: "Enterprise SaaS platform used by organizations to manage and optimize field operations, microlearning workflows, and business processes.",
+    problem: "Enterprise client administrators needed streamlined tools to author, publish, and analyze microlearning content across large workforces without causing API degradation under heavy query loads.",
+    solution: "Engineered core platform features including a React.js CMS dashboard, Azure OpenAI (GPT-4) content automation pipelines, a high-throughput Redis caching layer, and JWT/RBAC security integrations.",
+    myContribution: "Contributed to production features, backend services, APIs, authentication and authorization, data workflows, real-time functionality, and performance-sensitive application components for a platform serving 500+ enterprise clients and 10,000+ daily active users.",
+    engineering: "Built with React.js, TypeScript, and Redux on the frontend, and Node.js, Express, and Redis on the backend. Integrated Azure OpenAI (GPT-4) for automated content generation and JWT/RBAC for enterprise client onboarding.",
+    impact: "Recognized with the Engineering Masterpiece Award. The platform handled 100K+ daily API requests with improved cache response consistency across 500+ enterprise clients.",
+    keyEngineeringWork: [
+      "Owned full-stack delivery of the React.js CMS dashboard from system design through production deployment",
+      "Built an Azure OpenAI-powered content automation pipeline using Node.js",
+      "Implemented Redis caching across high-frequency REST endpoints handling 100K+ daily requests",
+      "Designed JWT/RBAC authentication integrated with client HRMS infrastructure",
+      "Built real-time analytics and MIS reporting with scheduled email distribution",
+      "Developed multilingual content delivery capabilities with dynamic locale switching",
+      "Built gamified React learning modules (Point to Shoot, Rotate to Match, Crazy Cars, Pac-Man style)",
+      "Received the Engineering Masterpiece Award for platform infrastructure contributions"
     ],
-    architectureDescription: "Built with React.js, TypeScript, and Redux on the frontend, and Node.js, Express, and Redis on the backend. Integrated Azure OpenAI (GPT-4) for automated content generation, Redis for high-throughput API caching (100K+ daily requests), and JWT/RBAC for enterprise security.",
     keyChallenges: [
-      "Optimizing REST API endpoints under heavy load (100,000+ daily requests) without adding infrastructure scaling costs",
-      "Integrating Azure OpenAI GPT-4 into existing publishing workflows safely and reliably",
-      "Eliminating unauthorized access incidents while onboarding 10,000+ users across enterprise HRMS systems"
+      "Optimizing REST API response consistency under platform scale (100,000+ daily API requests) without extra infrastructure costs",
+      "Integrating Azure OpenAI GPT-4 into existing enterprise publishing pipelines safely",
+      "Enforcing strict multi-tenant RBAC permissions during client HRMS integrations"
     ],
     engineeringDecisions: [
-      "Implemented a Redis caching layer for critical read paths to absorb peak query volume",
-      "Established a reusable React component library, accelerating feature velocity across the engineering team",
-      "Designed a JWT/RBAC middleware layer enforcing strict role permissions across enterprise clients"
+      "Implemented a Redis caching strategy on critical read paths to absorb peak query volume",
+      "Established a reusable React component library to accelerate frontend feature velocity",
+      "Designed JWT/RBAC middleware layers enforcing strict tenant isolation across enterprise clients"
     ],
     technologies: [
-      "React.js",
+      "React",
       "TypeScript",
       "Node.js",
-      "Express.js",
+      "Express",
       "Redis",
-      "Azure OpenAI (GPT-4)",
-      "JWT / RBAC",
+      "Azure OpenAI",
+      "JWT",
+      "RBAC",
       "Redux",
-      "Socket.IO",
-      "TailwindCSS"
+      "Tailwind CSS"
     ],
-    whatILearned: [
-      "Full system design ownership for enterprise B2B SaaS platforms serving 500+ clients",
-      "High-throughput API optimization with Redis handling 100K+ daily requests",
-      "Integrating LLM pipelines (Azure OpenAI GPT-4) for enterprise content automation",
-      "Building enterprise RBAC and HRMS authentication integrations for 10,000+ users"
-    ],
-    outcome: "Recognized with the Engineering Masterpiece Award for platform contributions that accelerated publishing velocity, reduced API latency under 100K+ daily requests, and supported 500+ enterprise client deployments.",
     githubUrl: "https://github.com/aliakib",
     highlights: [
       "Winner of Engineering Masterpiece Award for core CMS platform architecture",
       "Sole engineer owning React.js CMS dashboard for 500+ enterprise clients",
       "Azure OpenAI (GPT-4) content automation pipeline in Node.js",
-      "Redis caching handling 100,000+ daily API requests",
-      "JWT & HRMS RBAC onboarding for 10,000+ daily active users"
+      "Redis caching layer optimizing high-frequency API endpoints (100K+ daily requests)"
     ]
   },
   {
     id: "iqra-learning-tree",
     title: "Iqra Learning Tree",
-    tagline: "Architected & built a complete institute management platform from scratch as sole full-stack engineer",
+    categoryTag: "Institute Management Platform",
+    tagline: "A full-stack platform designed to manage students, teachers, courses, attendance, administrative workflows, and role-specific operations.",
     isPrimaryFeatured: false,
-    status: "Archived (Software Completed)",
+    status: "Archived (Paid Project Completed)",
     role: "Solo Full-Stack Developer / Architect",
-    overview: "Iqra Learning Tree was a custom institute management platform built from scratch to serve as the technological foundation for a proposed educational institute.",
-    context: "Commissioned as a paid project by trainer Mr. Sakir, the goal was to develop a complete full-stack web platform supporting student, teacher, and administrator portals. Although Mr. Sakir later decided not to launch the institute, the software was fully completed.",
-    whatIBuilt: [
-      "Role-based authenticated portals for administrators, teachers, and students",
-      "RESTful API backend for managing user accounts, courses, and schedules",
-      "Role-Based Access Control (RBAC) security middleware and JWT authentication",
-      "File management system integrating binary file storage and Google Drive API for public/private asset delivery",
-      "Database schema and data relationships modeling in MongoDB with Mongoose"
+    overview: "A full-stack platform designed to manage students, teachers, courses, attendance, administrative workflows, and role-specific operations.",
+    problem: "Educational institutes require centralized administration to handle student enrollments, course schedules, role-specific content visibility, and document distribution securely.",
+    solution: "Architected and developed a full-stack paid platform from scratch featuring role-based portals, RESTful API backend, JWT authentication, RBAC middleware, and cloud asset delivery via Google Drive API.",
+    myContribution: "Architected and developed the application independently from the ground up as the sole full-stack developer.",
+    engineering: "Architected with a React/Next.js frontend communicating with a Node.js/Express REST API. Persistence handled via MongoDB and Mongoose with Google Drive API integrated for cloud asset storage.",
+    impact: "Successfully delivered the complete paid technical platform for institute administration as a solo full-stack engineer.",
+    keyEngineeringWork: [
+      "Role-based authentication system",
+      "Role-Based Access Control (RBAC) security middleware",
+      "RESTful API backend for CRUD operations",
+      "React / Next.js frontend portal UI",
+      "Node.js / Express backend service architecture",
+      "MongoDB / Mongoose database design & data relationships",
+      "Redux state management for user sessions",
+      "Google Drive API integration for cloud file delivery",
+      "Binary file handling and upload pipelines"
     ],
-    architectureDescription: "Architected with a React/Next.js frontend communicating with a Node.js/Express REST API. Secured with JWT authentication and RBAC middleware. Persistence handled via MongoDB and Mongoose, with file assets stored via Google Drive API.",
     keyChallenges: [
-      "Designing a flexible database schema capable of handling multi-tier user roles and permissions",
-      "Implementing secure file upload mechanisms and cloud storage integration for educational resources",
-      "Building a custom frontend state management flow using Redux to manage complex user sessions"
+      "Designing a flexible document database schema handling multi-tier user roles and dynamic permissions",
+      "Implementing secure file upload mechanisms and cloud storage access rules",
+      "Structuring clean API contracts for full CRUD operations across all administrative entities"
     ],
     engineeringDecisions: [
       "Selected MongoDB for rapid iteration on evolving educational data structures",
@@ -228,18 +238,12 @@ export const projectsData: CaseStudyData[] = [
       "Redux",
       "Google Drive API"
     ],
-    whatILearned: [
-      "How software systems operate end-to-end beyond UI component creation",
-      "Core principles of backend system architecture, API design, and security",
-      "Database data modeling and relationships for real business domain entities"
-    ],
-    outcome: "This project changed my perspective on software development from creating frontend screens to architecting complete, multi-layered software systems.",
     githubUrl: "https://github.com/aliakib",
     highlights: [
-      "First major paid full-stack project architected as sole engineer",
+      "Sole full-stack engineer architecting the paid platform from the ground up",
       "Complete RBAC authentication & role-based portal views",
       "MongoDB relational modeling & REST API development",
-      "Google Drive API storage integration for public/private assets"
+      "Google Drive API storage integration for asset delivery"
     ]
   }
 ];

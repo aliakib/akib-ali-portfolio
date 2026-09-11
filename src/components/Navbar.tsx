@@ -23,9 +23,10 @@ export function Navbar() {
 
   const navLinks = [
     { label: "Home", href: "/#hero" },
-    { label: "Journey", href: "/#journey" },
+    { label: "Services", href: "/#services" },
     { label: "Work", href: "/#work" },
     { label: "Experience", href: "/#experience" },
+    { label: "Skills", href: "/#skills" },
     { label: "About", href: "/#about" },
     { label: "Contact", href: "/#contact" },
   ];
@@ -54,7 +55,7 @@ export function Navbar() {
 
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex items-center gap-7">
-          <ul className="flex items-center gap-6 text-sm font-medium text-slate-600">
+          <ul className="flex items-center gap-5 text-sm font-medium text-slate-600">
             {navLinks.map((link) => (
               <li key={link.label}>
                 <Link

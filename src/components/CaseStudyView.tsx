@@ -14,7 +14,6 @@ import {
   ExternalLink,
   Github,
   Layers,
-  Lightbulb,
   ShieldAlert,
   Terminal,
 } from "lucide-react";
@@ -28,7 +27,7 @@ export function CaseStudyView({ project }: CaseStudyViewProps) {
   return (
     <div className="bg-slate-50 min-h-screen pt-28 pb-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Back Button & Navigation Trail */}
+        {/* Back Navigation */}
         <FadeIn direction="down" className="mb-8">
           <div className="flex items-center gap-2 text-sm text-slate-500 font-medium">
             <Link
@@ -36,7 +35,7 @@ export function CaseStudyView({ project }: CaseStudyViewProps) {
               className="inline-flex items-center gap-1.5 text-slate-600 hover:text-indigo-600 font-semibold transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
-              Back to Portfolio
+              Back to Work
             </Link>
             <ChevronRight className="w-4 h-4 text-slate-400" />
             <span className="text-slate-900 font-semibold">{project.title}</span>
@@ -50,7 +49,7 @@ export function CaseStudyView({ project }: CaseStudyViewProps) {
               <span className="px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-semibold uppercase tracking-wider font-mono">
                 {project.status}
               </span>
-              <span className="text-xs font-medium text-slate-500">
+              <span className="text-xs font-medium text-slate-500 font-mono">
                 Role: <strong className="text-slate-800">{project.role}</strong>
               </span>
             </div>
@@ -63,7 +62,7 @@ export function CaseStudyView({ project }: CaseStudyViewProps) {
               {project.tagline}
             </p>
 
-            {/* Quick Action Links */}
+            {/* Links */}
             <div className="flex flex-wrap items-center gap-4 pt-6 border-t border-slate-100">
               {project.githubUrl && (
                 <a
@@ -99,7 +98,7 @@ export function CaseStudyView({ project }: CaseStudyViewProps) {
             <FadeIn direction="up">
               <div className="bg-white rounded-xl border border-slate-200/80 p-6 sm:p-8 shadow-xs space-y-3">
                 <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-600 font-mono flex items-center gap-2">
-                  <Terminal className="w-4 h-4" /> 01. Project Overview
+                  <Terminal className="w-4 h-4" /> 01. Product Overview
                 </h2>
                 <p className="text-slate-700 text-base leading-relaxed font-normal">
                   {project.overview}
@@ -107,52 +106,72 @@ export function CaseStudyView({ project }: CaseStudyViewProps) {
               </div>
             </FadeIn>
 
-            {/* 2. Problem & Context */}
+            {/* 2. Problem */}
             <FadeIn direction="up">
               <div className="bg-white rounded-xl border border-slate-200/80 p-6 sm:p-8 shadow-xs space-y-3">
                 <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-600 font-mono flex items-center gap-2">
-                  <Layers className="w-4 h-4" /> 02. Problem & Context
+                  <Layers className="w-4 h-4" /> 02. Problem & Purpose
                 </h2>
                 <p className="text-slate-700 text-base leading-relaxed font-normal">
-                  {project.context}
+                  {project.problem}
                 </p>
               </div>
             </FadeIn>
 
-            {/* 3. My Role & What I Built */}
-            <FadeIn direction="up">
-              <div className="bg-white rounded-xl border border-slate-200/80 p-6 sm:p-8 shadow-xs space-y-4">
-                <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-600 font-mono flex items-center gap-2">
-                  <CheckSquare className="w-4 h-4" /> 03. Engineering Scope & What I Built
-                </h2>
-                <ul className="space-y-3">
-                  {project.whatIBuilt.map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-slate-700 text-sm sm:text-base">
-                      <CheckCircle2 className="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </FadeIn>
-
-            {/* 4. Architecture */}
+            {/* 3. Solution */}
             <FadeIn direction="up">
               <div className="bg-white rounded-xl border border-slate-200/80 p-6 sm:p-8 shadow-xs space-y-3">
                 <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-600 font-mono flex items-center gap-2">
-                  <Cpu className="w-4 h-4" /> 04. System Architecture
+                  <CheckSquare className="w-4 h-4" /> 03. Engineered Solution
                 </h2>
                 <p className="text-slate-700 text-base leading-relaxed font-normal">
-                  {project.architectureDescription}
+                  {project.solution}
                 </p>
               </div>
             </FadeIn>
 
-            {/* 5. Key Technical Challenges */}
+            {/* 4. My Contribution */}
             <FadeIn direction="up">
               <div className="bg-white rounded-xl border border-slate-200/80 p-6 sm:p-8 shadow-xs space-y-4">
                 <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-600 font-mono flex items-center gap-2">
-                  <ShieldAlert className="w-4 h-4" /> 05. Key Technical Challenges
+                  <Code className="w-4 h-4" /> 04. My Personal Contribution
+                </h2>
+                <p className="text-slate-700 text-base leading-relaxed font-normal mb-4">
+                  {project.myContribution}
+                </p>
+                <div className="pt-2">
+                  <span className="text-xs font-bold uppercase tracking-wider text-slate-400 font-mono block mb-3">
+                    Key Engineering Work
+                  </span>
+                  <ul className="space-y-2.5">
+                    {project.keyEngineeringWork.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-slate-700 text-sm sm:text-base">
+                        <CheckCircle2 className="w-4 h-4 text-indigo-600 shrink-0 mt-1" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </FadeIn>
+
+            {/* 5. Engineering */}
+            <FadeIn direction="up">
+              <div className="bg-white rounded-xl border border-slate-200/80 p-6 sm:p-8 shadow-xs space-y-3">
+                <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-600 font-mono flex items-center gap-2">
+                  <Cpu className="w-4 h-4" /> 05. Engineering & System Architecture
+                </h2>
+                <p className="text-slate-700 text-base leading-relaxed font-normal">
+                  {project.engineering}
+                </p>
+              </div>
+            </FadeIn>
+
+            {/* 6. Key Challenges & Decisions */}
+            <FadeIn direction="up">
+              <div className="bg-white rounded-xl border border-slate-200/80 p-6 sm:p-8 shadow-xs space-y-4">
+                <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-600 font-mono flex items-center gap-2">
+                  <ShieldAlert className="w-4 h-4" /> 06. Technical Challenges & Trade-Offs
                 </h2>
                 <ul className="space-y-3">
                   {project.keyChallenges.map((challenge, idx) => (
@@ -162,16 +181,10 @@ export function CaseStudyView({ project }: CaseStudyViewProps) {
                     </li>
                   ))}
                 </ul>
-              </div>
-            </FadeIn>
-
-            {/* 6. Important Engineering Decisions */}
-            <FadeIn direction="up">
-              <div className="bg-white rounded-xl border border-slate-200/80 p-6 sm:p-8 shadow-xs space-y-4">
-                <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-600 font-mono flex items-center gap-2">
-                  <Code className="w-4 h-4" /> 06. Important Engineering Decisions
-                </h2>
-                <div className="space-y-2.5">
+                <div className="pt-2 space-y-2.5">
+                  <span className="text-xs font-bold uppercase tracking-wider text-slate-400 font-mono block">
+                    Engineering Decisions
+                  </span>
                   {project.engineeringDecisions.map((decision, idx) => (
                     <div key={idx} className="p-3.5 rounded-lg bg-slate-50 border border-slate-200/60 text-slate-700 text-sm font-medium">
                       • {decision}
@@ -181,34 +194,19 @@ export function CaseStudyView({ project }: CaseStudyViewProps) {
               </div>
             </FadeIn>
 
-            {/* 7. What I Learned */}
-            <FadeIn direction="up">
-              <div className="bg-white rounded-xl border border-slate-200/80 p-6 sm:p-8 shadow-xs space-y-4">
-                <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-600 font-mono flex items-center gap-2">
-                  <Lightbulb className="w-4 h-4" /> 07. Key Learnings & Takeaways
-                </h2>
-                <div className="p-5 rounded-xl bg-indigo-50/70 border border-indigo-100 space-y-3">
-                  {project.whatILearned.map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-2.5 text-sm text-slate-800">
-                      <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 shrink-0 mt-2" />
-                      <span className="font-medium">{item}</span>
-                    </div>
-                  ))}
+            {/* 7. Impact & Scale */}
+            {project.impact && (
+              <FadeIn direction="up">
+                <div className="bg-slate-900 text-white rounded-xl p-6 sm:p-8 shadow-md space-y-3">
+                  <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-400 font-mono">
+                    07. Outcome & Platform Scale
+                  </h2>
+                  <p className="text-slate-200 text-base leading-relaxed">
+                    {project.impact}
+                  </p>
                 </div>
-              </div>
-            </FadeIn>
-
-            {/* 8. Outcome & Status */}
-            <FadeIn direction="up">
-              <div className="bg-slate-900 text-white rounded-xl p-6 sm:p-8 shadow-md space-y-3">
-                <h2 className="text-xs font-bold uppercase tracking-wider text-indigo-400 font-mono">
-                  08. Project Outcome & Current Status
-                </h2>
-                <p className="text-slate-200 text-base leading-relaxed">
-                  {project.outcome}
-                </p>
-              </div>
-            </FadeIn>
+              </FadeIn>
+            )}
           </div>
 
           {/* Sidebar */}

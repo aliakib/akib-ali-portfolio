@@ -1,7 +1,8 @@
 import { Hero } from "@/components/Hero";
-import { JourneyTimeline } from "@/components/JourneyTimeline";
+import { ServicesSection } from "@/components/ServicesSection";
 import { FeaturedProjects } from "@/components/FeaturedProjects";
 import { ExperienceSection } from "@/components/ExperienceSection";
+import { JourneyTimeline } from "@/components/JourneyTimeline";
 import { SkillsSection } from "@/components/SkillsSection";
 import { ExploringSection } from "@/components/ExploringSection";
 import { AboutSection } from "@/components/AboutSection";
@@ -11,9 +12,10 @@ export default function Home() {
   return (
     <div className="space-y-0">
       <Hero />
-      <JourneyTimeline />
+      <ServicesSection />
       <FeaturedProjects />
       <ExperienceSection />
+      <JourneyTimeline />
       <SkillsSection />
       <ExploringSection />
       <AboutSection />
